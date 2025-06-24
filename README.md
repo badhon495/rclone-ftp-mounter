@@ -33,7 +33,6 @@ RClone FTP Mounter is a bash script that allows you to mount multiple FTP server
 #### CircleFTP Servers
 - **16 CircleFTP endpoints** for diverse content access
 
----
 
 ## Quick Start
 
@@ -62,7 +61,6 @@ curl -fsSL https://raw.githubusercontent.com/badhon495/rclone-ftp-mounter/refs/h
    ./Install.sh
    ```
 
----
 
 ## Prerequisites
 
@@ -70,7 +68,6 @@ curl -fsSL https://raw.githubusercontent.com/badhon495/rclone-ftp-mounter/refs/h
 - **Internet connection** (preferably BDIX for optimal performance)
 - **sudo privileges** for package installation
 
----
 
 ## What the Script Does
 
@@ -91,7 +88,6 @@ curl -fsSL https://raw.githubusercontent.com/badhon495/rclone-ftp-mounter/refs/h
    - Creates mount directory at `~/MyMediaDrive`
    - Mounts all FTP servers with VFS caching enabled
 
----
 
 ## Usage
 
@@ -116,7 +112,6 @@ To unmount the drive:
 fusermount -u ~/MyMediaDrive
 ```
 
----
 
 ## Customization
 
@@ -152,15 +147,14 @@ To change the default mount location, modify the `MOUNT_FOLDER` variable in the 
 MOUNT_FOLDER="$HOME/YourCustomPath"
 ```
 
----
 
 ## Important Notes
 
 - **BDIX Access Required**: You must be connected to a Bangladeshi ISP for BDIX FTP access
 - **Persistent Connection**: Keep your internet connection stable for uninterrupted access
 - **Cache Usage**: VFS cache may use disk space; monitor available storage
+- **Permissions**: Owner of this script does not host any of the FTP servers. You are responsible for ensuring you have permission to access and use the FTP servers listed in the configuration.
 
----
 
 ## Contributing
 
