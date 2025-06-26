@@ -9,9 +9,6 @@ sudo apt install -y rclone fuse3
 echo "Loading FUSE module..."
 sudo modprobe fuse
 
-echo "Adding user to fuse group..."
-sudo usermod -aG fuse "$USER"
-
 CONFIG_PATH="$HOME/.config/rclone/rclone.conf"
 MOUNT_FOLDER="$HOME/MyMediaDrive"
 
