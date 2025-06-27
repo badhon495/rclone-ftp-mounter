@@ -161,9 +161,26 @@ type = union
 remotes = DhakaFlix12: DhakaFlix14-Animation: DhakaFlix14-Animation-1080p: DhakaFlix14-Hindi: DhakaFlix14-IMDb: DhakaFlix14-SouthHindiDubbed: DhakaFlix14-SouthOriginal: DhakaFlix7-3D: DhakaFlix7-English: DhakaFlix7-English-1080p: DhakaFlix7-Foreign: DhakaFlix7-Kolkata: DhakaFlix7-SatyajitRay: DhakaFlix9-AnimeCartoon: DhakaFlix9-Awards: DhakaFlix9-Documentary: DhakaFlix9-Korean: DhakaFlix9-Wrestling: CircleFTP1: CircleFTP2: CircleFTP3: CircleFTP4: CircleFTP5: CircleFTP6: CircleFTP7: CircleFTP8: CircleFTP9: CircleFTP10: CircleFTP11: CircleFTP12: CircleFTP13: CircleFTP14: CircleFTP15: CircleFTP16
 EOF
 
-echo "Mounting drive..."
-rclone mount MyMediaDrive: "$MOUNT_FOLDER" --vfs-cache-mode full &
+# Color codes for better visibility
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+RED='\033[0;31m'
+BOLD='\033[1m'
+NC='\033[0m' # No Color
 
-echo "Setup complete. You can now access your media at: $MOUNT_FOLDER"
-echo "Note: You must stay connected to your ISP for BDIX access."
-echo "Use 'rclone mount MyMediaDrive: ~/MyMediaDrive --vfs-cache-mode full' to remount if needed or run the script again." 
+echo ""
+echo -e "${GREEN}${BOLD}========================================${NC}"
+echo -e "${GREEN}${BOLD}       SETUP COMPLETED SUCCESSFULLY!   ${NC}"
+echo -e "${GREEN}${BOLD}========================================${NC}"
+echo ""
+echo -e "${BLUE}📁 Your media is accessible at: ${BOLD}$MOUNT_FOLDER${NC}"
+echo ""
+echo -e "${YELLOW}⚠️  IMPORTANT NOTES:${NC}"
+echo -e "${YELLOW}   • You must stay connected to your ISP for BDIX access${NC}"
+echo -e "${YELLOW}   • Use the command below every time to mount the FTP servers${NC}"
+echo ""
+echo -e "${BLUE}${BOLD}🚀 Mount Command:${NC}"
+echo -e "${GREEN}rclone mount MyMediaDrive: ~/MyMediaDrive --vfs-cache-mode full${NC}"
+echo ""
+echo -e "${GREEN}${BOLD}========================================${NC}" 
