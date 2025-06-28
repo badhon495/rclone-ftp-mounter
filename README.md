@@ -61,13 +61,6 @@ curl -fsSL https://raw.githubusercontent.com/badhon495/rclone-ftp-mounter/refs/h
    ```
 
 
-## Prerequisites
-
-- **Linux-based system** (Ubuntu, Debian, Mint, etc.)
-- **Internet connection** (Internet from BDIX connected ISP)
-- **sudo privileges** for package installation
-
-
 ## What the Script Does
 
 1. **Updates system packages** and installs required dependencies:
