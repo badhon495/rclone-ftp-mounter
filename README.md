@@ -23,7 +23,6 @@ RClone FTP Mounter is a bash script that allows you to mount multiple FTP server
 - **Union Mount**: All FTP servers accessible through a single mount point
 - **Performance Optimized**: Uses VFS cache for better performance
 - **User-Friendly**: Automatic user group management and permissions
-- **Easy Remounting**: Simple commands for reconnection
 
 ### Pre-configured FTP Servers
 
@@ -65,7 +64,7 @@ curl -fsSL https://raw.githubusercontent.com/badhon495/rclone-ftp-mounter/refs/h
 ## Prerequisites
 
 - **Linux-based system** (Ubuntu, Debian, Mint, etc.)
-- **Internet connection** (preferably BDIX for optimal performance)
+- **Internet connection** (Internet from BDIX connected ISP)
 - **sudo privileges** for package installation
 
 
@@ -77,7 +76,6 @@ curl -fsSL https://raw.githubusercontent.com/badhon495/rclone-ftp-mounter/refs/h
 
 2. **Configures system settings**:
    - Loads FUSE kernel module
-   - Adds user to the `fuse` group for proper permissions
 
 3. **Sets up RClone configuration**:
    - Creates configuration file at `~/.config/rclone/rclone.conf`
